@@ -1,0 +1,155 @@
+:root {
+    font-size: 20px;
+}
+
+*:focus {
+    outline: none !important;
+    -webkit-appearance: none !important;
+}
+
+
+
+
+
+
+html,
+body {
+    font-family: Roboto, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+	margin:0;
+}
+
+
+
+
+
+
+.sidebar,
+.chat,
+.profile-sidebar {
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .profile {
+    padding: 2% 4%;
+    background-color: #eee;
+}
+
+.sidebar .profile-pic {
+	width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sidebar .profile-pic,
+.chats img{
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.chats img {
+	width:50px;
+	height: 50px;
+}
+
+.chats ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.chats li {
+	padding:3% 2%;
+	font-size: 0.8rem;
+}
+
+.chats li:hover{
+	background-color: #F4F4F4;
+	cursor: pointer; 
+}
+
+
+
+
+.profile-nav{
+	height: 20vh;
+	
+}
+
+.profile-nav div {
+	margin: 3% 4%;
+    width: 100%;
+}
+
+.profile-nav i {
+	margin: 0 2%;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.profile-sidebar .profile-pic{
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	margin:10% 0;
+}
+
+/*Fade in Overlay effect*/
+.pic-container{
+	position: relative;
+	width: 50%;
+	margin:0 auto;
+}
+
+.pic-container:hover .overlay {
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #666;
+}
+
+.text {
+  color: #fff;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text i {
+	font-size: 2rem;
+}
+
+
+
+.chat {
+    background: url('./img/background.png') repeat;
+}
+
+
