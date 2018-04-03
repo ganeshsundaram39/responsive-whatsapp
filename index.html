@@ -17,30 +17,39 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar col-md-4 col-lg-4 col-xl-4 border-right d-none">
+            <div class="sidebar col-md-4 col-lg-4 col-xl-4 border-right">
                 <div class="profile border-bottom">
-                    <img src="./resources/img/profile-pic.jpg" class="profile-pic">
+                    <img src="" class="profile-pic rounded-circle" alt="Show Profile">
                 </div>
                 <div class="chats">
                     <ul>
-                        <li class='border-bottom'><img src="./resources/img/janet.jpg">Janet Jackson</li>
-                        <li class='border-bottom'><img src="./resources/img/paul.jpg">Dave Grohl</li>
-                        <li class='border-bottom'><img src="./resources/img/emily.jpg">Emily Vulcano</li>
+                        <li class='border-bottom'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson">Janet Jackson</li>
+                        <li class='border-bottom'><img src="./resources/img/paul.jpg" class="rounded-circle" alt="Dave Grohl">Dave Grohl</li>
+                        <li class='border-bottom'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano">Emily Vulcano</li>
                     </ul>
                 </div>
             </div>
-            <div class="profile-sidebar  col-md-4 col-lg-4 col-xl-4 border-right">
+            <div class="profile-sidebar col-md-4 col-lg-4 col-xl-4 border-right d-none">
                 <div class="profile-nav bg-primary  d-flex align-items-end">
                     <div class="text-white">
-                        <i class="ion-ios-arrow-thin-left"></i> Profile
+                        <i class="ion-ios-arrow-thin-left back"></i> Profile
                     </div>
                 </div>
                 <div class="pic-container">
-                    <img src="./resources/img/profile-pic.jpg" class="profile-pic d-block">
-                    <div class="overlay">
+                    <img src="" class="profile-pic d-block img-fluid rounded-circle" alt="profile picture">
+                    <div class="overlay img-fluid">
                         <div class="text"><i class="ion-camera"></i>
                             <br>CHANGE PROFILE PHOTO</div>
                     </div>
+                </div>
+                <div class="edit">
+                    <div class="name">Your Name</div>
+                    <input type="text" name="username" disabled value="">
+                </div>
+                <div class="text-muted">This is not your username or pin. This name will be visible to your WhatsApp contacts.</div>
+                <div class="edit">
+                    <div class="name">About</div>
+                    <input type="text" name="status" disabled value="">
                 </div>
             </div>
             <div class="chat col-md-8 col-lg-8 col-xl-8"></div>
@@ -51,6 +60,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='./resources/js/whatsappdata.js'></script>
     <script src='./resources/js/script.js'></script>
 </body>
 

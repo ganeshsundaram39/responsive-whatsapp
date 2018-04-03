@@ -1,3 +1,11 @@
+/*********************************************/
+
+
+/********** color: #007bff; **********/
+
+
+/*********************************************/
+
 :root {
     font-size: 20px;
 }
@@ -26,7 +34,7 @@ body {
 }
 
 .row {
-	margin:0;
+    margin: 0;
 }
 
 
@@ -48,102 +56,130 @@ body {
 }
 
 .sidebar .profile-pic {
-	width: 40px;
+    width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
 .sidebar .profile-pic,
-.chats img{
-    border-radius: 50%;
+.chats img {
     margin-right: 2%;
 }
 
 .chats img {
-	width:50px;
-	height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .chats ul {
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .chats li {
-	padding:3% 2%;
-	font-size: 0.8rem;
+    padding: 3% 2%;
+    font-size: 0.8rem;
 }
 
-.chats li:hover{
-	background-color: #F4F4F4;
-	cursor: pointer; 
+.chats li:hover {
+    background-color: #F4F4F4;
+    cursor: pointer;
 }
 
 
 
+.profile-sidebar {
+    background: #f1f1f1;
+    overflow-y: auto;
+}
 
-.profile-nav{
-	height: 20vh;
-	
+.profile-nav {
+    height: 20vh;
 }
 
 .profile-nav div {
-	margin: 3% 4%;
+    margin: 3% 4%;
     width: 100%;
 }
 
 .profile-nav i {
-	margin: 0 2%;
-	font-size: 1.1rem;
-	cursor: pointer;
+    margin: 0 2%;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.profile-sidebar .profile-pic{
-	width:200px;
-	height:200px;
-	border-radius: 50%;
-	margin:10% 0;
+.profile-sidebar .profile-pic {
+    width: 200px;
+    height: 200px;
 }
+
 
 /*Fade in Overlay effect*/
-.pic-container{
-	position: relative;
-	width: 50%;
-	margin:0 auto;
+
+.pic-container {
+    position: relative;
+    width: 50%;
+    margin: 10% auto;
 }
 
 .pic-container:hover .overlay {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 200px;
-  height: 200px;
-  border-radius:50%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: #666;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #666;
+    cursor: pointer;
 }
 
 .text {
-  color: #fff;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .text i {
-	font-size: 2rem;
+    font-size: 2rem;
+}
+
+.edit {
+    margin: 6% 0 3% 0;
+}
+
+.edit .name {
+    font-size: 0.7rem;
+    padding: 1% 4%;
+    background: #fff;
+    color: #007bff;
+}
+
+.edit input {
+    width: 100%;
+    background: #fff;
+    padding: 3% 4%;
+    border: 0;
+    border-bottom: 1px solid #e6e4e0;
+    font-size: 0.8rem;
+}
+
+.text-muted {
+    font-size: 0.68rem;
+    padding: 0 4%;
 }
 
 
@@ -151,5 +187,4 @@ body {
 .chat {
     background: url('./img/background.png') repeat;
 }
-
 
