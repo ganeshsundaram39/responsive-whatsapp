@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link id="favicon" rel="shortcut icon" href="./resources/img/whatsapp-icon.png" type="image/png">
     <title>WhatsApp</title>
 </head>
@@ -18,14 +18,47 @@
     <div class="container-fluid">
         <div class="row">
             <div class="sidebar col-md-4 col-lg-4 col-xl-4 border-right">
-                <div class="profile border-bottom">
-                    <img src="" class="profile-pic rounded-circle" alt="Show Profile">
+                <div class="profile border-bottom d-flex  align-items-center">
+                    <img src="./resources/img/profile-pic.jpg" class="profile-pic rounded-circle" alt="Show Profile">
                 </div>
                 <div class="chats">
                     <ul>
-                        <li class='border-bottom'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson">Janet Jackson</li>
-                        <li class='border-bottom'><img src="./resources/img/paul.jpg" class="rounded-circle" alt="Dave Grohl">Dave Grohl</li>
-                        <li class='border-bottom'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano">Emily Vulcano</li>
+                        <li class='border-bottom row'>
+                            <div class='col-2'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
+                            <div class="col-7">Janet Jackson
+                                <br><span class="text-muted">Information Technology</span></div>
+                            <div class="col-3"><small class="text-muted">2:54 PM</small></div>
+                        </li>
+                        <li class='border-bottom row'>
+                            <div class='col-2'><img src="./resources/img/avengers.jpg" class="rounded-circle" alt="The Avengers"></div>
+                            <div class="col-7">The Avengers
+                                <br><span class="text-muted">prank</span></div>
+                            <div class="col-3"><small class="text-muted">Yesterday</small></div>
+                        </li>
+                        <li class='border-bottom row'>
+                            <div class='col-2'><img src="./resources/img/paul.jpg" class="rounded-circle" alt="Dave Grohl"></div>
+                            <div class="col-7">Dave Grohl
+                                <br><span class="text-muted">football</span></div>
+                            <div class="col-3"><small class="text-muted">Yesterday</small></div>
+                        </li>
+                        <li class='border-bottom row'>
+                            <div class='col-2'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano"></div>
+                            <div class="col-7">Emily Vulcano
+                                <br><span class="text-muted">ok</span></div>
+                            <div class="col-3"><small class="text-muted">1/4/2018</small></div>
+                        </li>
+                        <li class='border-bottom row'>
+                            <div class='col-2'><img src="./resources/img/john.jpg" class="rounded-circle" alt="John gatto"></div>
+                            <div class="col-7">John Gatto
+                                <br><span class="text-muted">weekend</span></div>
+                            <div class="col-3"><small class="text-muted">25/3/2018</small></div>
+                        </li>
+                        <li class='border-bottom row'>
+                            <div class='col-2'><img src="./resources/img/la.png" class="rounded-circle" alt="LA BOYS"></div>
+                            <div class="col-7">LA BOYS
+                                <br><span class="text-muted">How yall spending this summer?</span></div>
+                            <div class="col-3"><small class="text-muted">20/3/2018</small></div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -35,24 +68,31 @@
                         <i class="ion-ios-arrow-thin-left back"></i> Profile
                     </div>
                 </div>
-                <div class="pic-container">
-                    <img src="" class="profile-pic d-block img-fluid rounded-circle" alt="profile picture">
-                    <div class="overlay img-fluid">
-                        <div class="text"><i class="ion-camera"></i>
+                <div class="pic-container position-relative">
+                    <img src="./resources/img/profile-pic.jpg" class="profile-pic d-block img-fluid rounded-circle" alt="profile picture">
+                    <div class="overlay img-fluid position-absolute">
+                        <div class="text position-absolute text-center"><i class="ion-camera"></i>
                             <br>CHANGE PROFILE PHOTO</div>
                     </div>
                 </div>
                 <div class="edit">
                     <div class="name">Your Name</div>
-                    <input type="text" name="username" disabled value="">
+                    <input type="text" name="username" disabled value="Paul McCartney">
                 </div>
                 <div class="text-muted">This is not your username or pin. This name will be visible to your WhatsApp contacts.</div>
                 <div class="edit">
                     <div class="name">About</div>
-                    <input type="text" name="status" disabled value="">
+                    <input type="text" name="status" disabled value="Hey Jude!">
                 </div>
             </div>
-            <div class="chat col-md-8 col-lg-8 col-xl-8"></div>
+            <div class="chat col-md-8 col-lg-8 col-xl-8">
+                <div class="row border-bottom d-flex  align-items-center">
+                    <div class='col-1'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
+                    <div class="col-8">Janet Jackson
+                        <br><span >Last Seen on 7:03 PM</span></div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Optional JavaScript -->
@@ -60,7 +100,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src='./resources/js/whatsappdata.js'></script>
     <script src='./resources/js/script.js'></script>
 </body>
 

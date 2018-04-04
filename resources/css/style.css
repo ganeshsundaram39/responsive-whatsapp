@@ -50,12 +50,21 @@ body {
     padding-left: 0;
 }
 
-.sidebar .profile {
-    padding: 2% 4%;
-    background-color: #eee;
+
+
+/*Sidebar*/
+
+.sidebar .profile{
+    
+    background-color: #555; 
+    
+    height: 10vh;
+    
+    padding-left: 3%;
 }
 
-.sidebar .profile-pic {
+.sidebar .profile-pic,
+.chat img {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -77,9 +86,14 @@ body {
     padding: 0;
 }
 
-.chats li {
+.chats li
+{
     padding: 3% 2%;
     font-size: 0.8rem;
+}
+
+.chats li:first-child{
+	background: #d8d8d8;
 }
 
 .chats li:hover {
@@ -87,8 +101,13 @@ body {
     cursor: pointer;
 }
 
+.chats span,
+.chat span {
+	font-size: 0.7rem;
+}
 
 
+/*Profile Bar*/
 .profile-sidebar {
     background: #f1f1f1;
     overflow-y: auto;
@@ -116,9 +135,7 @@ body {
 
 
 /*Fade in Overlay effect*/
-
 .pic-container {
-    position: relative;
     width: 50%;
     margin: 10% auto;
 }
@@ -128,7 +145,6 @@ body {
 }
 
 .overlay {
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -145,12 +161,10 @@ body {
 .text {
     color: #fff;
     font-size: 0.8rem;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .text i {
@@ -177,14 +191,28 @@ body {
     font-size: 0.8rem;
 }
 
-.text-muted {
+.profile-sidebar .text-muted {
     font-size: 0.68rem;
     padding: 0 4%;
 }
 
 
 
+
+
 .chat {
     background: url('./img/background.png') repeat;
+}
+
+.chat .row:first-child{
+	
+    background-color: #555;
+    font-size: 0.8rem;
+    color:#fff;
+    height: 10vh;
+}
+
+.chat .col-8{
+	padding-left: 0;
 }
 
