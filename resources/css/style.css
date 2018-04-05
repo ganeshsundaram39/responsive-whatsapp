@@ -52,19 +52,21 @@ body {
 
 
 
+
+
 /*Sidebar*/
 
-.sidebar .profile{
-    
-    background-color: #555; 
-    
+.sidebar .profile {
+
+    background-color: #555;
+
     height: 10vh;
-    
+
     padding-left: 3%;
 }
 
 .sidebar .profile-pic,
-.chat img {
+.chat .col-1 img {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -75,6 +77,10 @@ body {
     margin-right: 2%;
 }
 
+.chats .col-3 {
+    text-align: right;
+}
+
 .chats img {
     width: 50px;
     height: 50px;
@@ -82,18 +88,15 @@ body {
 
 .chats ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.chats li
-{
+.chats li {
     padding: 3% 2%;
     font-size: 0.8rem;
 }
 
-.chats li:first-child{
-	background: #d8d8d8;
+.chats li:first-child {
+    background: #d8d8d8;
 }
 
 .chats li:hover {
@@ -103,11 +106,14 @@ body {
 
 .chats span,
 .chat span {
-	font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 
+
+
 /*Profile Bar*/
+
 .profile-sidebar {
     background: #f1f1f1;
     overflow-y: auto;
@@ -134,7 +140,10 @@ body {
 }
 
 
+
+
 /*Fade in Overlay effect*/
+
 .pic-container {
     width: 50%;
     margin: 10% auto;
@@ -204,15 +213,64 @@ body {
     background: url('./img/background.png') repeat;
 }
 
-.chat .row:first-child{
-	
+.chat>.row:first-child {
     background-color: #555;
     font-size: 0.8rem;
-    color:#fff;
+    color: #fff;
     height: 10vh;
 }
 
-.chat .col-8{
-	padding-left: 0;
+.chat-section {
+    padding: 0 10%;
+    overflow-y: auto;
+    height: 90vh;
 }
 
+.chat-section .self,
+.chat-section .other {
+
+    margin: 1% 0;
+    background: #fff;
+    font-size: 0.75rem;
+    padding: 1%;
+    box-shadow: -2px 2px 1px 0px #cccbcb;
+}
+
+.chat-section .self {
+    border-top-right-radius: 0px !important;
+    background-color: #DCF8C6;
+}
+
+.chat-section .other {
+    border-top-left-radius: 0px !important;
+}
+
+.triangle-left {
+    border-left: 9px solid transparent;
+    border-top: 9px solid #fff;
+}
+
+.triangle-right {
+    border-right: 9px solid transparent;
+    border-top: 9px solid #DCF8C6;
+}
+
+.triangle-left,
+.triangle-right {
+    width: 0;
+    height: 0;
+    z-index: 99;
+    margin: 1% 0;
+}
+
+.chat-section .message {
+    padding-right: 100px;
+    white-space: nowrap;
+}
+
+.chat-section .text-muted {
+    font-size: 0.6rem;
+    white-space: nowrap;
+    bottom: 2%;
+    right: 2%;
+}
