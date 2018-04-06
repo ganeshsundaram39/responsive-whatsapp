@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
     <link id="favicon" rel="shortcut icon" href="./resources/img/whatsapp-icon.png" type="image/png">
@@ -23,37 +23,37 @@
                 </div>
                 <div class="chats">
                     <ul class="m-0 p-0">
-                        <li class='border-bottom row'>
+                        <li class='border-bottom row' data-name='Janet Jackson' data-type='oneToOne'>
                             <div class='col-2'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
                             <div class="col-7">Janet Jackson
                                 <br><span class="text-muted">Information Technology</span></div>
-                            <div class="col-3"><small class="text-muted">2:54 PM</small></div>
+                            <div class="col-3"><small class="text-muted">3:03 PM</small></div>
                         </li>
-                        <li class='border-bottom row'>
+                        <li class='border-bottom row'  data-name='The Avengers' data-type='group'>
                             <div class='col-2'><img src="./resources/img/avengers.jpg" class="rounded-circle" alt="The Avengers"></div>
                             <div class="col-7">The Avengers
                                 <br><span class="text-muted">prank</span></div>
                             <div class="col-3"><small class="text-muted">Yesterday</small></div>
                         </li>
-                        <li class='border-bottom row'>
-                            <div class='col-2'><img src="./resources/img/paul.jpg" class="rounded-circle" alt="Dave Grohl"></div>
+                        <li class='border-bottom row' data-name='Dave Grohl' data-type='oneToOne'>
+                            <div class='col-2'><img src="./resources/img/dave.jpg" class="rounded-circle" alt="Dave Grohl"></div>
                             <div class="col-7">Dave Grohl
                                 <br><span class="text-muted">football</span></div>
                             <div class="col-3"><small class="text-muted">Yesterday</small></div>
                         </li>
-                        <li class='border-bottom row'>
+                        <li class='border-bottom row' data-name='Emily Vulcano' data-type='oneToOne'>
                             <div class='col-2'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano"></div>
                             <div class="col-7">Emily Vulcano
                                 <br><span class="text-muted">ok</span></div>
                             <div class="col-3"><small class="text-muted">1/4/2018</small></div>
                         </li>
-                        <li class='border-bottom row'>
-                            <div class='col-2'><img src="./resources/img/john.jpg" class="rounded-circle" alt="John gatto"></div>
+                        <li class='border-bottom row' data-name='John Gatto' data-type='oneToOne'>
+                            <div class='col-2'><img src="./resources/img/john.jpg" class="rounded-circle" alt="John Gatto"></div>
                             <div class="col-7">John Gatto
                                 <br><span class="text-muted">weekend</span></div>
                             <div class="col-3"><small class="text-muted">25/3/2018</small></div>
                         </li>
-                        <li class='border-bottom row'>
+                        <li class='border-bottom row' data-name='LA BOYS' data-type='group'>
                             <div class='col-2'><img src="./resources/img/la.png" class="rounded-circle" alt="LA BOYS"></div>
                             <div class="col-7">LA BOYS
                                 <br><span class="text-muted">How yall spending this summer?</span></div>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="pic-container position-relative">
-                    <img src="./resources/img/profile-pic.jpg" class="profile-pic d-block img-fluid rounded-circle" alt="profile picture">
+                    <img src="" class="profile-pic d-block img-fluid rounded-circle" alt="profile picture">
                     <div class="overlay img-fluid position-absolute">
                         <div class="text position-absolute text-center"><i class="ion-camera"></i>
                             <br>CHANGE PROFILE PHOTO</div>
@@ -77,12 +77,12 @@
                 </div>
                 <div class="edit">
                     <div class="name">Your Name</div>
-                    <input type="text" name="username" disabled value="Paul McCartney">
+                    <input type="text" name="displayName" disabled value="">
                 </div>
                 <div class="text-muted">This is not your username or pin. This name will be visible to your WhatsApp contacts.</div>
                 <div class="edit">
                     <div class="name">About</div>
-                    <input type="text" name="status" disabled value="Hey Jude!">
+                    <input type="text" name="about" disabled value="">
                 </div>
             </div>
             <div class="chat col-md-8 col-lg-8 col-xl-8">
@@ -97,7 +97,7 @@
                         <div class="self rounded position-relative  ">
                             <div class="message  ">Hi Janet
                                 <br>Paul here</div>
-                            <div class='text-muted position-absolute'>1:40 PM <img src="./resources/img/double-tick-indicator.png" alt="" width="16" height="16">  </div>
+                            <div class='text-muted position-absolute'>1:40 PM <img src="./resources/img/double-tick-indicator.png" alt="" width="16" height=" 16"> </div>
                         </div>
                         <div class="triangle-right"></div>
                     </div>
@@ -108,7 +108,7 @@
                             <div class='text-muted position-absolute'>2:35 PM</div>
                         </div>
                     </div>
-                   <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-end">
                         <div class="self rounded position-relative">
                             <div class="message">I am fine wbuu</div>
                             <div class='text-muted position-absolute'>2:40 PM <img src="./resources/img/double-tick-indicator.png" alt="" width="16" height="16"></div>
@@ -157,11 +157,25 @@
                         </div>
                         <div class="triangle-right"></div>
                     </div>
-                     <div class="d-flex">
+                    <div class="d-flex">
                         <div class="triangle-left"></div>
                         <div class="other rounded position-relative">
                             <div class="message">K👍</div>
                             <div class='text-muted position-absolute'>2:59 PM</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="self rounded position-relative">
+                            <div class="message">What is your Degree/Major In?</div>
+                            <div class='text-muted position-absolute'>3:02 PM <img src="./resources/img/double-tick-indicator.png" alt="" width="16" height="16"></div>
+                        </div>
+                        <div class="triangle-right"></div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="triangle-left"></div>
+                        <div class="other rounded position-relative">
+                            <div class="message">Information Technology</div>
+                            <div class='text-muted position-absolute'>3:03 PM</div>
                         </div>
                     </div>
                 </div>
@@ -173,6 +187,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./resources/js/whatsappdata.js"></script>
+
     <script src='./resources/js/script.js'></script>
 </body>
 
