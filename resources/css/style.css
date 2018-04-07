@@ -100,12 +100,12 @@ body {
 }
 
 .chats li:hover {
-    background-color: #F4F4F4;
+    background-color: #F4F4F4 !important;
     cursor: pointer;
 }
 
 .chats span,
-.chat span {
+.chat .details{
     font-size: 0.7rem;
 }
 
@@ -184,7 +184,7 @@ body {
     margin: 6% 0 3% 0;
 }
 
-.edit .name {
+.edit .lbl {
     font-size: 0.7rem;
     padding: 1% 4%;
     background: #fff;
@@ -218,6 +218,10 @@ body {
     font-size: 0.8rem;
     color: #fff;
     height: 10vh;
+}
+
+.chat .chat-window_name{
+	font-size: 0.8rem;
 }
 
 .chat-section {

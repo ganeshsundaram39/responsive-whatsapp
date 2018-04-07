@@ -6,9 +6,13 @@ const accessDOM = () => {
         smallProfilePic: document.getElementsByClassName(`profile-pic`)[0],
         largeProfilePic: document.getElementsByClassName(`profile-pic`)[1],
         back: document.getElementsByClassName(`back`)[0],
-        name: document.querySelector(`[name='displayName']`),
+        displayName: document.querySelector(`[name='displayName']`),
         about: document.querySelector(`[name='about']`),
-        chats: document.querySelectorAll(`.chats li`)
+        chats: document.querySelectorAll(`.chats li`),
+        chatWindowName: document.querySelector(`.chat .chat-window_name`),
+        chatWindowPhoto: document.querySelector(`.chat img`),
+        details: document.querySelector(`.chat .details`),
+        clickedList(event) { return event.path.find(x => x.localName === 'li') }
     }
 };
 
@@ -24,19 +28,42 @@ const sidebarVisibility = event => {
     accessDOM().sidebar.classList.remove(`d-none`);
 };
 
+const changeListColor = event => {
+
+    Array.from(accessDOM().chats).forEach(x => x.style.background = '#fff');
+    accessDOM().clickedList(event).style.background = '#d8d8d8';
+};
+
 const userClicksChat = event => {
 
-    const targetLi = event.path.find(x => x.localName === 'li');
+    for (let userOrGrp of whatsappData.communication[accessDOM().clickedList(event).getAttribute('data-type')]) {
 
-    for (let user of whatsappData.communication[targetLi.getAttribute('data-type')]) {
-        if (user.name === targetLi.getAttribute('data-name')) {
+        if (userOrGrp.name === accessDOM().clickedList(event).getAttribute('data-name')) {
+
+            changeListColor(event);
+
+            accessDOM().chatWindowPhoto.src = userOrGrp.profilePicUrl;
+            accessDOM().chatWindowName.innerText = userOrGrp.name;
+
+            if (userOrGrp.lastSeen) {
+
+                accessDOM().details.innerText = `Last Seen on ${userOrGrp.lastSeen}`;
+            } else if (userOrGrp.members) {
+
+                accessDOM().details.innerText = userOrGrp.members
+                    .map(x => x.inUserContact ? x.name : x.contactNumber)
+                    .reduce((x, y) => `${x}, ${y}`);
+
+            }
+
             
-            
+
             break;
         }
     }
     event.stopPropagation();
 };
+
 
 const initializeUIEvents = () => {
 
@@ -45,6 +72,7 @@ const initializeUIEvents = () => {
 
     for (let chat in accessDOM().chats) {
         accessDOM().chats[chat].onclick = userClicksChat;
+
     }
 };
 
@@ -52,7 +80,7 @@ const initializeUIEvents = () => {
 const initializeProfileData = () => {
 
     accessDOM().largeProfilePic.src = whatsappData.userData.profilePicUrl;
-    accessDOM().name.value = whatsappData.userData.name;
+    accessDOM().displayName.value = whatsappData.userData.name;
     accessDOM().about.value = whatsappData.userData.about;
 };
 
