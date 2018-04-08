@@ -9,13 +9,13 @@ const whatsappData = {
             "name": "Janet Jackson",
             "profilePicUrl": "./resources/img/janet.jpg",
             "lastSeen": "7:03 PM",
-            "message": [{
+            "messages": [{
                 "date": "3/4/2018",
                 "message": [{
                         "type": "self",
                         "text": "Hi Janet<br>Paul here",
                         "time": "1:40 PM",
-                        "status": true
+                        "seen": true
                     }, {
                         "type": "other",
                         "text": "Hiiii😊😊... how are u???",
@@ -27,7 +27,7 @@ const whatsappData = {
                         "time": "2:40 PM",
                         "seen": true
                     }, {
-                        "type": "self",
+                        "type": "other",
                         "text": "Fine😊😊...are u working??",
                         "time": "2:45 PM",
                         "seen": true
@@ -70,7 +70,7 @@ const whatsappData = {
                     }, {
                         "type": "other",
                         "text": "Information Technology",
-                        "time": "3:02 PM",
+                        "time": "3:03 PM",
                         "seen": true
                     }
                 ]
@@ -79,8 +79,8 @@ const whatsappData = {
             "name": "Dave Grohl",
             "profilePicUrl": "./resources/img/dave.jpg",
             "lastSeen": "4:34 PM",
-            "message": [{
-                "date": "3/4/2018",
+            "messages": [{
+                "date": "2/4/2018",
                 "message": [{
                         "type": "other",
                         "text": "Hey Paul,",
@@ -89,7 +89,7 @@ const whatsappData = {
                     }, {
                         "type": "other",
                         "text": "How's it going",
-                        "time": "7:01 PM",
+                        "time": "7:02 PM",
                         "seen": true
                     }, {
                         "type": "self",
@@ -99,167 +99,195 @@ const whatsappData = {
                     }, {
                         "type": "self",
                         "text": "How's it going for you Dave",
-                        "time": "7:07 PM",
-                        "seen": true
-                    }
-                ]
-            }]
-        },{
-        	"name": "Emily Vulcano",
-            "profilePicUrl": "./resources/img/emily.jpg",
-            "lastSeen": "6:33 PM",
-            "message": [{
-                "date": "3/4/2018",
-                "message": [{
-                        "type": "self",
-                        "text": "Whadd'yado",
-                        "time": "4:40 PM",
-                        "status": true
-                    }, {
-                        "type": "other",
-                        "text": "I work for microsoft",
-                        "time": "5:35 PM",
-                        "seen": true
-                    }, {
-                        "type": "self",
-                        "text": "That must be exciting!",
-                        "time": "6:40 PM",
-                        "seen": true
-                    }, {
-                        "type": "other",
-                        "text": "Where are you from?",
-                        "time": "2:45 PM",
+                        "time": "7:05 PM",
                         "seen": true
                     },
                     {
+                        "type": "other",
+                        "text": "Fantastic",
+                        "time": "7:06 PM",
+                        "seen": true
+                    }, {
                         "type": "self",
-                        "text": "LA",
-                        "time": "2:45 PM",
+                        "text": "What outdoor game you like?",
+                        "time": "7:07 PM",
+                        "seen": true
+                    },
+                    {
+                        "type": "other",
+                        "text": "I LOVE",
+                        "time": "7:08 PM",
+                        "seen": true
+                    },
+                    {
+                        "type": "other",
+                        "text": "football",
+                        "time": "7:08 PM",
                         "seen": true
                     }
                 ]
             }]
-        },{
-        	"name": "John Gatto",
+        }, {
+            "name": "Emily Vulcano",
+            "profilePicUrl": "./resources/img/emily.jpg",
+            "lastSeen": "6:33 PM",
+            "messages": [{
+                "date": "1/4/2018",
+                "message": [{
+                    "type": "self",
+                    "text": "Whadd'yado",
+                    "time": "4:40 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "I work for microsoft",
+                    "time": "5:35 PM",
+                    "seen": true
+                }, {
+                    "type": "self",
+                    "text": "That must be exciting!",
+                    "time": "6:40 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "Where are you from?",
+                    "time": "6:45 PM",
+                    "seen": true
+                }, {
+                    "type": "self",
+                    "text": "LA",
+                    "time": "6:46 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "ok",
+                    "time": "6:47 PM",
+                    "seen": true
+                }]
+            }]
+        }, {
+            "name": "John Gatto",
             "profilePicUrl": "./resources/img/john.jpg",
             "lastSeen": "1:01 PM",
-            "message": [{
-                "date": "3/4/2018",
+            "messages": [{
+                "date": "25/3/2018",
                 "message": [{
-                        "type": "self",
-                        "text": "What do you do for fun?",
-                        "time": "1:40 PM",
-                        "status": true
-                    }, {
-                        "type": "other",
-                        "text": "I really like watching movies",
-                        "time": "2:35 PM",
-                        "seen": true
-                    }, {
-                        "type": "other",
-                        "text": "What do you do in your free time?",
-                        "time": "2:40 PM",
-                        "seen": true
-                    }, {
-                        "type": "self",
-                        "text": "I kind of like playing tennis",
-                        "time": "2:45 PM",
-                        "seen": true
-                    }
-                ]
+                    "type": "self",
+                    "text": "What do you do for fun?",
+                    "time": "1:40 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "I really like watching movies",
+                    "time": "2:35 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "What do you do in your free time?",
+                    "time": "2:40 PM",
+                    "seen": true
+                }, {
+                    "type": "self",
+                    "text": "I kind of like playing tennis",
+                    "time": "2:45 PM",
+                    "seen": true
+                }, {
+                    "type": "self",
+                    "text": "When is next baseball coming?",
+                    "time": "2:46 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "weekend",
+                    "time": "2:47 PM",
+                    "seen": true
+                }]
             }]
         }],
         "group": [{
             "name": "The Avengers",
             "profilePicUrl": "./resources/img/avengers.jpg",
             "lastPost": "Yesterday",
-            "members":[{
-            	"name":"Noah",
-            	"contactNumber":"+91 8976236512",
-            	"inUserContact":true
-            },{
-            	"name":"William",
-            	"contactNumber":"+91 7652349284",
-            	"inUserContact":true
-            },{
-            	"name":"Leo",
-            	"contactNumber":"+91 2347868234",
-            	"inUserContact":false
-            },{
-            	"name":"Winston",
-            	"contactNumber":"+91 8734512312",
-            	"inUserContact":true
+            "members": [{
+                "name": "Noah",
+                "contactNumber": "+91 8976236512",
+                "inUserContact": true
+            }, {
+                "name": "William",
+                "contactNumber": "+91 7652349284",
+                "inUserContact": true
+            }, {
+                "name": "Leo",
+                "contactNumber": "+91 2347868234",
+                "inUserContact": false
+            }, {
+                "name": "Winston",
+                "contactNumber": "+91 8734512312",
+                "inUserContact": true
             }],
-            "message": [{
-                "date": "3/4/2018",
+            "messages": [{
+                "date": "2/4/2018",
                 "message": [{
-                        "type": "self",
-                        "text": "What do you do for fun?",
-                        "time": "1:40 PM",
-                        "status": true
-                    }, {
-                        "type": "other",
-                        "text": "I really like watching movies",
-                        "time": "2:35 PM",
-                        "seen": true
-                    }, {
-                        "type": "other",
-                        "text": "What do you do in your free time?",
-                        "time": "2:40 PM",
-                        "seen": true
-                    }, {
-                        "type": "self",
-                        "text": "I kind of like playing tennis",
-                        "time": "2:45 PM",
-                        "seen": true
-                    }
-                ]
+                    "type": "self",
+                    "text": "When is next avenger movie coming out?",
+                    "time": "1:40 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "No idea mate!",
+                    "time": "2:35 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "This month I guess",
+                    "time": "2:40 PM",
+                    "seen": true
+                }, {
+                    "type": "self",
+                    "text": "This month😍😍😍",
+                    "time": "2:45 PM",
+                    "seen": true
+                }]
             }]
         }, {
             "name": "LA BOYS",
             "profilePicUrl": "./resources/img/la.png",
-            "lastPost": "2/3/2018",
-            "members":[{
-            	"name":"Josh",
-            	"contactNumber":"+91 8976236512",
-            	"inUserContact":true
-            },{
-            	"name":"Drake",
-            	"contactNumber":"+91 7652349284",
-            	"inUserContact":false
-            },{
-            	"name":"Steve",
-            	"contactNumber":"+91 2347868234",
-            	"inUserContact":false
-            },{
-            	"name":"Jeff",
-            	"contactNumber":"+91 8734512312",
-            	"inUserContact":true
+            "lastPost": "20/3/2018",
+            "members": [{
+                "name": "Josh",
+                "contactNumber": "+91 8976236512",
+                "inUserContact": true
+            }, {
+                "name": "Drake",
+                "contactNumber": "+91 7652349284",
+                "inUserContact": false
+            }, {
+                "name": "Steve",
+                "contactNumber": "+91 2347868234",
+                "inUserContact": false
+            }, {
+                "name": "Jeff",
+                "contactNumber": "+91 8734512312",
+                "inUserContact": true
             }],
-            "message": [{
-                "date": "3/4/2018",
+            "messages": [{
+                "date": "20/3/2018",
                 "message": [{
-                        "type": "self",
-                        "text": "What do you do for fun?",
-                        "time": "1:40 PM",
-                        "status": true
-                    }, {
-                        "type": "other",
-                        "text": "I really like watching movies",
-                        "time": "2:35 PM",
-                        "seen": true
-                    }, {
-                        "type": "other",
-                        "text": "What do you do in your free time?",
-                        "time": "2:40 PM",
-                        "seen": true
-                    }, {
-                        "type": "self",
-                        "text": "I kind of like playing tennis",
-                        "time": "2:45 PM",
-                        "seen": true
-                    }
-                ]
+                    "type": "self",
+                    "text": "Anyone online??",
+                    "time": "9:40 PM",
+                    "seen": true
+                }, {
+                    "type": "other",
+                    "text": "What Happened?",
+                    "time": "2:35 PM",
+                    "seen": true
+                }, {
+                    "type": "self",
+                    "text": "I have a Query!",
+                    "time": "2:40 PM",
+                    "seen": false
+                }]
             }]
         }]
     }
