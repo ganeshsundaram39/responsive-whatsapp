@@ -291,5 +291,4 @@ const whatsappData = {
             }]
         }]
     }
-
 };

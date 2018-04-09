@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <div class="row">
             <div class="sidebar col-md-4 col-lg-4 col-xl-4 border-right">
                 <div class="profile border-bottom d-flex  align-items-center">
@@ -23,47 +23,53 @@
                 </div>
                 <div class="chats">
                     <ul class="m-0 p-0">
-                        <li class='border-bottom row' data-name='Janet Jackson' data-type='oneToOne'>
-                            <div class='col-2'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
-                            <div class="col-7">Janet Jackson
+                        <li class='border-bottom row position-relative' data-name='Janet Jackson' data-type='oneToOne'>
+                            <div class="mx-3"><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
+                            <div>Janet Jackson
                                 <br><span class="text-muted">Information Technology</span></div>
-                            <div class="col-3"><small class="text-muted">3:03 PM</small></div>
+                            <div class="position-absolute"><small class="text-muted">3:03 PM</small></div>
                         </li>
-                        <li class='border-bottom row'  data-name='The Avengers' data-type='group'>
-                            <div class='col-2'><img src="./resources/img/avengers.jpg" class="rounded-circle" alt="The Avengers"></div>
-                            <div class="col-7">The Avengers
-                                <br><span class="text-muted"><img src="./resources/img/seen.png" alt="seen" width="16" height="16">This month😍😍😍</span></div>
-                            <div class="col-3"><small class="text-muted">Yesterday</small></div>
+                        <li class='border-bottom row' data-name='The Avengers' data-type='group'>
+                            <div class='mx-3'><img src="./resources/img/avengers.jpg" class="rounded-circle" alt="The Avengers"></div>
+                            <div>The Avengers
+                                <br><span class="text-muted"><img src="./resources/img/seen.png" alt="seen" width="16" height="16" class="mb-1 mx-1">This month😍😍😍</span></div>
+                            <div class="position-absolute"><small class="text-muted">Yesterday</small></div>
                         </li>
                         <li class='border-bottom row' data-name='Dave Grohl' data-type='oneToOne'>
-                            <div class='col-2'><img src="./resources/img/dave.jpg" class="rounded-circle" alt="Dave Grohl"></div>
-                            <div class="col-7">Dave Grohl
+                            <div class='mx-3'><img src="./resources/img/dave.jpg" class="rounded-circle" alt="Dave Grohl"></div>
+                            <div>Dave Grohl
                                 <br><span class="text-muted">football</span></div>
-                            <div class="col-3"><small class="text-muted">Yesterday</small><br><div>2</div></div>
+                            <div class="position-absolute"><small class="text-muted">Yesterday</small>
+                                <br>
+                                <div class="unread rounded-circle mr-2">2</div>
+                            </div>
                         </li>
                         <li class='border-bottom row' data-name='Emily Vulcano' data-type='oneToOne'>
-                            <div class='col-2'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano"></div>
-                            <div class="col-7">Emily Vulcano
+                            <div class='mx-3'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano"></div>
+                            <div >Emily Vulcano
                                 <br><span class="text-muted">ok</span></div>
-                            <div class="col-3"><small class="text-muted">1/4/2018</small><br><div>1</div></div>
+                            <div class="position-absolute"><small class="text-muted">1/4/2018</small>
+                                <br>
+                                <div class="unread rounded-circle mr-2">1</div>
+                            </div>
                         </li>
                         <li class='border-bottom row' data-name='John Gatto' data-type='oneToOne'>
-                            <div class='col-2'><img src="./resources/img/john.jpg" class="rounded-circle" alt="John Gatto"></div>
-                            <div class="col-7">John Gatto
+                            <div class='mx-3'><img src="./resources/img/john.jpg" class="rounded-circle" alt="John Gatto"></div>
+                            <div>John Gatto
                                 <br><span class="text-muted">weekend</span></div>
-                            <div class="col-3"><small class="text-muted">25/3/2018</small></div>
+                            <div class="position-absolute"><small class="text-muted">25/3/2018</small></div>
                         </li>
                         <li class='border-bottom row' data-name='LA BOYS' data-type='group'>
-                            <div class='col-2'><img src="./resources/img/la.png" class="rounded-circle" alt="LA BOYS"></div>
-                            <div class="col-7">LA BOYS
-                                <br><span class="text-muted"><img src="./resources/img/unseen.png" alt="seen" width="16" height="16">I have a Query!</span></div>
-                            <div class="col-3"><small class="text-muted">20/3/2018</small></div>
+                            <div class='mx-3'><img src="./resources/img/la.png" class="rounded-circle" alt="LA BOYS"></div>
+                            <div >LA BOYS
+                                <br><span class="text-muted"><img src="./resources/img/unseen.png" alt="seen" width="16" height="16" class="mb-1 mx-1">I have a Query!</span></div>
+                            <div class="position-absolute"><small class="text-muted">20/3/2018</small></div>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="profile-sidebar col-md-4 col-lg-4 col-xl-4 border-right d-none">
-                <div class="profile-nav bg-primary  d-flex align-items-end">
+                <div class="profile-nav bg-primary d-flex align-items-end">
                     <div class="text-white">
                         <i class="ion-ios-arrow-thin-left back"></i> Profile
                     </div>
@@ -87,12 +93,13 @@
             </div>
             <div class="chat col-md-8 col-lg-8 col-xl-8">
                 <div class="row border-bottom d-flex  align-items-center">
-                    <div class='col-1'><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
-                    <div class="col-8 pl-0"><span class="chat-window_name">Janet Jackson</span>
-                        <br><span class="details">Last Seen on 7:03 PM</span></div>
-                    <div class="col-3"></div>
+                    <div class="ml-3"><img src="" class="rounded-circle" alt=""></div>
+                    <div class="ml-2"><span class="chat-window_name"></span>
+                        <br><span class="details"></span></div>
+                    
                 </div>
                 <div class="chat-section">
+                    <!-- 
                     <div class="d-flex justify-content-end">
                         <div class="self rounded position-relative  ">
                             <div class="message  ">Hi Janet<br>Paul here</div>
@@ -107,88 +114,17 @@
                             <div class='text-muted position-absolute'>2:35 PM </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="self rounded position-relative">
-                            <div class="message">I am fine wbuu</div>
-                            <div class='text-muted position-absolute'>2:40 PM <img src="./resources/img/seen.png" alt="seen" width="16" height="16"></div>
-                        </div>
-                        <div class="triangle-right"></div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="triangle-left"></div>
-                        <div class="other rounded position-relative">
-                            <div class="message">Fine😊😊...are u working??</div>
-                            <div class='text-muted position-absolute'>2:45 PM </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="self rounded position-relative">
-                            <div class="message">Studyying online</div>
-                            <div class='text-muted position-absolute'>2:47 PM <img src="./resources/img/seen.png" alt="seen" width="16" height="16"></div>
-                        </div>
-                        <div class="triangle-right"></div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="self rounded position-relative mt-0">
-                            <div class="message">Are you working??</div>
-                            <div class='text-muted position-absolute'>2:50 PM <img src="./resources/img/seen.png" alt="seen" width="16" height="16"></div>
-                        </div>
-                        <div class="triangle-right invisible"></div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="triangle-left"></div>
-                        <div class="other rounded position-relative">
-                            <div class="message">Yup... what are u studying</div>
-                            <div class='text-muted position-absolute'>2:52 PM </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="triangle-left invisible"></div>
-                        <div class="other rounded position-relative mt-0">
-                            <div class="message">??</div>
-                            <div class='text-muted position-absolute'>2:55 PM </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="self rounded position-relative">
-                            <div class="message">Web Development</div>
-                            <div class='text-muted position-absolute'>2:57 PM <img src="./resources/img/seen.png" alt="seen" width="16" height="16"></div>
-                        </div>
-                        <div class="triangle-right"></div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="triangle-left"></div>
-                        <div class="other rounded position-relative">
-                            <div class="message">K👍</div>
-                            <div class='text-muted position-absolute'>2:59 PM </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="self rounded position-relative">
-                            <div class="message">What is your Degree/Major In?</div>
-                            <div class='text-muted position-absolute'>3:02 PM <img src="./resources/img/seen.png" alt="seen" width="16" height="16"></div>
-                        </div>
-                        <div class="triangle-right"></div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="triangle-left"></div>
-                        <div class="other rounded position-relative">
-                            <div class="message">Information Technology</div>
-                            <div class='text-muted position-absolute'>3:03 PM </div>
-                        </div>
-                    </div>
+                    -->
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./resources/js/whatsappdata.js"></script>
-
-    <script src='./resources/js/script.js'></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./resources/js/whatsappdata.js"></script>
+        <script src='./resources/js/script.js'></script>
 </body>
 
 </html>

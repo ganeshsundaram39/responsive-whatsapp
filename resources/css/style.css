@@ -26,12 +26,7 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 .row {
     margin: 0;
@@ -54,36 +49,31 @@ body {
 
 
 
+
 /*Sidebar*/
 
 .sidebar .profile {
 
     background-color: #555;
-
     height: 10vh;
-
     padding-left: 3%;
 }
 
 .sidebar .profile-pic,
-.chat .col-1 img {
+.chat .rounded-circle {
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-.sidebar .profile-pic,
-.chats img {
-    margin-right: 2%;
+
+.chats .position-absolute {
+   right: 5%;
+   text-align: right;
 }
 
-.chats .col-3 {
-    text-align: right;
-}
-
-.chats .col-3 div {
-	border: 1px solid #007bff;
-    border-radius: 50%;
+.chats .unread {
+    border: 1px solid #007bff;
     background: #007bff;
     color: #fff;
     width: 20px;
@@ -99,8 +89,8 @@ body {
 }
 
 .chats .text-muted img {
-	width:16px;
-	height: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .chats ul {
@@ -122,9 +112,10 @@ body {
 }
 
 .chats span,
-.chat .details{
+.chat .details {
     font-size: 0.7rem;
 }
+
 
 
 
@@ -155,6 +146,7 @@ body {
     width: 200px;
     height: 200px;
 }
+
 
 
 
@@ -237,8 +229,8 @@ body {
     height: 10vh;
 }
 
-.chat .chat-window_name{
-	font-size: 0.8rem;
+.chat .chat-window_name {
+    font-size: 0.8rem;
 }
 
 .chat-section {
