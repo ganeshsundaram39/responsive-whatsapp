@@ -30,6 +30,7 @@ body {
 
 .row {
     margin: 0;
+    overflow: hidden;
 }
 
 
@@ -220,6 +221,12 @@ body {
 
 .chat {
     background: url('./img/background.png') repeat;
+}
+
+.chat i{
+	
+	visibility: hidden;
+	cursor:pointer;
 }
 
 .chat>.row:first-child {

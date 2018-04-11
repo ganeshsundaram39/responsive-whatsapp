@@ -26,6 +26,12 @@
     .mx-3 {
         margin-right: .5rem!important;
     }
+    
+    .chat i {
+        visibility: visible;
+        font-size: 1.2rem;
+        
+    }
 
     .chat .details {
         font-size: 0.6rem;
@@ -74,6 +80,11 @@
     .chats li {
         padding: 3% 0%;
     }
+
+    .chat i {
+        visibility: visible;
+        font-size: 1.3rem;
+    }
     .chat-section {
         padding: 0 5%;
     }
@@ -87,10 +98,10 @@
 /* Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 992px) {
-     :root {
+    
+    :root {
         font-size: 18px;
     }
-
 
     .chats .text-muted img {
         width: 14px;
