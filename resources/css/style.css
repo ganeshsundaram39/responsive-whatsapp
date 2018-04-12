@@ -1,7 +1,17 @@
+/*****************************************************/
+
+
+/********** color: #007bff; color: #555; **********/
+
+/********** prefixer:https://autoprefixer.github.io/ **********/
+
 /*********************************************/
 
 
-/********** color: #007bff; **********/
+/*********************************************/
+
+
+/********** Basic setting **********/
 
 
 /*********************************************/
@@ -15,35 +25,21 @@
     -webkit-appearance: none !important;
 }
 
-
-
-
-
-
 html,
 body {
     font-family: Roboto, sans-serif;
     text-rendering: optimizeLegibility;
 }
 
-
-
 .row {
     margin: 0;
     overflow: hidden;
 }
 
-
-
-
-
-
 .sidebar,
 .chat,
 .profile-sidebar {
     height: 100vh;
-    padding-right: 0;
-    padding-left: 0;
 }
 
 
@@ -51,40 +47,50 @@ body {
 
 
 
-/*Sidebar*/
+/*********************************************/
+
+
+/********** Sidebar **********/
+
+
+/*********************************************/
 
 .sidebar .profile {
 
     background-color: #555;
     height: 10vh;
-    padding-left: 3%;
 }
 
 .sidebar .profile-pic,
 .chat .rounded-circle {
+
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
 
+
+/*********************************************/
+
+
+/********** Chats **********/
+
+
+/*********************************************/
+
 .chats .position-absolute {
-   right: 5%;
-   text-align: right;
+    right: 5%;
 }
 
 .chats .unread {
-    border: 1px solid #007bff;
-    background: #007bff;
-    color: #fff;
     width: 20px;
     height: 20px;
     font-size: 0.6rem;
-    display: inline-block;
-    text-align: center;
 }
 
 .chats img {
+
     width: 50px;
     height: 50px;
 }
@@ -99,7 +105,6 @@ body {
 }
 
 .chats li {
-    padding: 3% 2%;
     font-size: 0.8rem;
 }
 
@@ -108,7 +113,6 @@ body {
 }
 
 .chats li:hover {
-    background-color: #F4F4F4 !important;
     cursor: pointer;
 }
 
@@ -120,8 +124,13 @@ body {
 
 
 
+/*********************************************/
 
-/*Profile Bar*/
+
+/********** profile sidebar **********/
+
+
+/*********************************************/
 
 .profile-sidebar {
     background: #f1f1f1;
@@ -132,13 +141,7 @@ body {
     height: 20vh;
 }
 
-.profile-nav div {
-    margin: 3% 4%;
-    width: 100%;
-}
-
 .profile-nav i {
-    margin: 0 2%;
     font-size: 1.1rem;
     cursor: pointer;
 }
@@ -151,12 +154,10 @@ body {
 
 
 
-
-/*Fade in Overlay effect*/
+/*Fade in Overlay effect for profile pic*/
 
 .pic-container {
     width: 50%;
-    margin: 10% auto;
 }
 
 .pic-container:hover .overlay {
@@ -170,8 +171,9 @@ body {
     right: 0;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     opacity: 0;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
     transition: .3s ease;
     background-color: #666;
     cursor: pointer;
@@ -182,57 +184,60 @@ body {
     font-size: 0.8rem;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+
+
+/*name and about in profile bar*/
 
 .text i {
     font-size: 2rem;
 }
 
-.edit {
-    margin: 6% 0 3% 0;
-}
-
 .edit .lbl {
     font-size: 0.7rem;
-    padding: 1% 4%;
-    background: #fff;
-    color: #007bff;
 }
 
 .edit input {
-    width: 100%;
-    background: #fff;
-    padding: 3% 4%;
-    border: 0;
     border-bottom: 1px solid #e6e4e0;
     font-size: 0.8rem;
+    -webkit-box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
 }
 
 .profile-sidebar .text-muted {
     font-size: 0.68rem;
-    padding: 0 4%;
 }
 
 
 
 
+
+
+/*********************************************/
+
+
+/********** Individual Chat Area **********/
+
+
+/*********************************************/
 
 .chat {
-    background: url('./img/background.png') repeat;
+    background: url('https://res.cloudinary.com/gscode/image/upload/v1523549300/whatsapp-bg.png') repeat;
 }
 
-.chat i{
-	
-	visibility: hidden;
-	cursor:pointer;
+.chat i {
+
+    visibility: hidden;
+    cursor: pointer;
 }
 
 .chat>.row:first-child {
     background-color: #555;
     font-size: 0.8rem;
-    color: #fff;
     height: 10vh;
 }
 
@@ -241,29 +246,47 @@ body {
 }
 
 .chat-section {
-    padding: 0 10%;
     overflow-y: auto;
     height: 90vh;
 }
+
+
+
+/*message*/
 
 .chat-section .self,
 .chat-section .other {
 
     margin: 1% 0;
-    background: #fff;
     font-size: 0.75rem;
-    padding: 1%;
-    box-shadow: -2px 2px 1px 0px #cccbcb;
+    -webkit-box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
 }
 
 .chat-section .self {
     border-top-right-radius: 0px !important;
-    background-color: #DCF8C6;
+    background: #DCF8C6;
 }
 
 .chat-section .other {
     border-top-left-radius: 0px !important;
 }
+
+.chat-section .message {
+    padding-right: 100px;
+    white-space: nowrap;
+}
+
+.chat-section .text-muted {
+    font-size: 0.6rem;
+    white-space: nowrap;
+    bottom: 2%;
+    right: 2%;
+}
+
+
+
+/*triangle shape*/
 
 .triangle-left {
     border-left: 9px solid transparent;
@@ -283,14 +306,16 @@ body {
     margin: 1% 0;
 }
 
-.chat-section .message {
-    padding-right: 100px;
-    white-space: nowrap;
-}
 
-.chat-section .text-muted {
+
+/*main date*/
+
+.chat-section .date {
+
     font-size: 0.6rem;
-    white-space: nowrap;
-    bottom: 2%;
-    right: 2%;
+    color: #555;
+    background-color: rgba(225, 245, 254, 0.92);
+    -webkit-box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }

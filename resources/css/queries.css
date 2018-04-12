@@ -2,35 +2,28 @@
 
 @media (max-width: 575.98px) {
 
+    /*base font size*/
      :root {
         font-size: 18px;
     }
 
+    /*profile sidebar*/
     .profile-sidebar .profile-pic,
     .overlay {
         width: 150px;
         height: 150px;
     }
 
+    /*all Contacts*/
     .chats .text-muted img {
         width: 14px;
         height: 14px;
     }
 
-    .ml-3,
-    .mx-3 {
-        margin-left: .5rem!important;
-    }
-
-    .mr-3,
-    .mx-3 {
-        margin-right: .5rem!important;
-    }
-    
+    /*single chat section*/
     .chat i {
         visibility: visible;
         font-size: 1.2rem;
-        
     }
 
     .chat .details {
@@ -51,22 +44,17 @@
         font-size: 0.5rem;
     }
 
-    .chat-section {
-        padding: 0;
-    }
-
-    .triangle-left,
-    .triangle-right {
-        margin: 3% 0;
-    }
-
     .chat-section .text-muted img {
         width: 14px;
         height: 14px;
     }
+
+    /*triangle shape in message*/
+    .triangle-left,
+    .triangle-right {
+        margin: 3% 0;
+    }
 }
-
-
 
 
 
@@ -74,22 +62,17 @@
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) and (max-width: 768px) {
+    /*base font size*/
      :root {
         font-size: 20px;
     }
-    .chats li {
-        padding: 3% 0%;
-    }
 
+    /*chat section */
     .chat i {
         visibility: visible;
         font-size: 1.3rem;
     }
-    .chat-section {
-        padding: 0 5%;
-    }
 }
-
 
 
 
@@ -98,37 +81,22 @@
 /* Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 992px) {
-    
-    :root {
+
+    /*base font size*/
+     :root {
         font-size: 18px;
     }
 
+    /*all contacts */
     .chats .text-muted img {
         width: 14px;
         height: 14px;
     }
 
+    /*profile bar*/
     .profile-sidebar .profile-pic,
     .overlay {
         width: 150px;
         height: 150px;
     }
 }
-
-
-
-
-
-
-/* Large devices (desktops, 992px and up)*/
-
-@media (min-width: 992px) {}
-
-
-
-
-
-
-/* Extra large devices (large desktops, 1200px and up)*/
-
-@media (min-width: 1200px) {}

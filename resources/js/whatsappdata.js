@@ -2,12 +2,12 @@ const whatsappData = {
     "userData": {
         "name": "Paul McCartney",
         "about": "Hey Jude!",
-        "profilePicUrl": "./resources/img/profile-pic.jpg"
+        "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523548546/paul.jpg"
     },
     "communication": {
         "oneToOne": [{
             "name": "Janet Jackson",
-            "profilePicUrl": "./resources/img/janet.jpg",
+            "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523548484/janet.jpg",
             "lastSeen": "7:03 PM",
             "messages": [{
                 "date": "3/4/2018",
@@ -77,7 +77,7 @@ const whatsappData = {
             }]
         }, {
             "name": "Dave Grohl",
-            "profilePicUrl": "./resources/img/dave.jpg",
+            "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523549009/dave.jpg",
             "lastSeen": "4:34 PM",
             "messages": [{
                 "date": "2/4/2018",
@@ -129,7 +129,7 @@ const whatsappData = {
             }]
         }, {
             "name": "Emily Vulcano",
-            "profilePicUrl": "./resources/img/emily.jpg",
+            "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523549063/emily.jpg",
             "lastSeen": "6:33 PM",
             "messages": [{
                 "date": "1/4/2018",
@@ -167,7 +167,7 @@ const whatsappData = {
             }]
         }, {
             "name": "John Gatto",
-            "profilePicUrl": "./resources/img/john.jpg",
+            "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523549115/john.jpg",
             "lastSeen": "1:01 PM",
             "messages": [{
                 "date": "25/3/2018",
@@ -206,7 +206,7 @@ const whatsappData = {
         }],
         "group": [{
             "name": "The Avengers",
-            "profilePicUrl": "./resources/img/avengers.jpg",
+            "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523549149/avengers.jpg",
             "lastPost": "Yesterday",
             "members": [{
                 "name": "Noah",
@@ -229,7 +229,7 @@ const whatsappData = {
                 "date": "2/4/2018",
                 "message": [{
                     "type": "self",
-                    "text": "When is next avenger movie coming out?",
+                    "text": "When is next avenger movie?",
                     "time": "1:40 PM",
                     "seen": true
                 }, {
@@ -239,19 +239,19 @@ const whatsappData = {
                     "seen": true
                 }, {
                     "type": "other",
-                    "text": "This month I guess",
+                    "text": "next month I guess",
                     "time": "2:40 PM",
                     "seen": true
                 }, {
                     "type": "self",
-                    "text": "This month😍😍😍",
+                    "text": "Next month😍😍😍",
                     "time": "2:45 PM",
                     "seen": true
                 }]
             }]
         }, {
             "name": "LA BOYS",
-            "profilePicUrl": "./resources/img/la.png",
+            "profilePicUrl": "https://res.cloudinary.com/gscode/image/upload/v1523549197/la.png",
             "lastPost": "20/3/2018",
             "members": [{
                 "name": "Josh",

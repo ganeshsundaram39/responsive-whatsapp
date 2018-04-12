@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- ionic icons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
+    <!-- minified css || check style.css for unminified version-->
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.min.css">
+    <!-- minified media queries || check queries.css for unminified version-->
+    <link rel="stylesheet" type="text/css" href="./resources/css/queries.min.css">
+    <!-- tab icon -->
     <link id="favicon" rel="shortcut icon" href="./resources/img/whatsapp-icon.png" type="image/png">
     <title>WhatsApp</title>
 </head>
@@ -17,88 +21,117 @@
 <body>
     <div class="container-fluid px-0">
         <div class="row">
-            <div class="sidebar col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 border-right d-block">
-                <div class="profile border-bottom d-flex  align-items-center">
-                    <img src="./resources/img/profile-pic.jpg" class="profile-pic rounded-circle" alt="Show Profile">
+            <!-- sidebar section contains link to open profile bar and shows all whatsapp contacts -->
+            <div class="sidebar col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 border-right d-block px-0">
+                <!-- .profile.img opens profile bar -->
+                <div class="profile border-bottom d-flex align-items-center pl-2">
+                    <img src="" class="profile-pic rounded-circle" alt="Show Profile">
                 </div>
-                <div class="chats ">
+                <!-- whatsapp contacts starts -->
+                <div class="chats">
                     <ul class="m-0 p-0">
-                        <li class='border-bottom row position-relative' data-name='Janet Jackson' data-type='oneToOne'>
-                            <div class="mx-3"><img src="./resources/img/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
+                        <!-- single contact starts -->
+                        <li class='border-bottom row position-relative px-1 py-2' data-name='Janet Jackson' data-type='oneToOne'>
+                            <div class="mx-md-3 mx-2"><img src="https://res.cloudinary.com/gscode/image/upload/v1523548484/janet.jpg" class="rounded-circle" alt="Janet Jackson"></div>
                             <div>Janet Jackson
                                 <br><span class="text-muted">Information Technology</span></div>
                             <div class="position-absolute"><small class="text-muted">3:03 PM</small></div>
                         </li>
-                        <li class='border-bottom row' data-name='The Avengers' data-type='group'>
-                            <div class='mx-3'><img src="./resources/img/avengers.jpg" class="rounded-circle" alt="The Avengers"></div>
+                        <!-- single contact end -->
+                        <!-- single contact starts -->
+                        <li class='border-bottom row position-relative px-1 py-2' data-name='The Avengers' data-type='group'>
+                            <div class='mx-md-3 mx-2'><img src="https://res.cloudinary.com/gscode/image/upload/v1523549149/avengers.jpg" class="rounded-circle" alt="The Avengers"></div>
                             <div>The Avengers
-                                <br><span class="text-muted"><img src="./resources/img/seen.png" alt="seen" width="16" height="16" class="mb-1 mx-1">This month😍😍😍</span></div>
+                                <br><span class="text-muted"><img src="./resources/img/seen.png" alt="seen" width="16" height="16" class="mb-1 mx-1">Next month😍😍😍</span></div>
                             <div class="position-absolute"><small class="text-muted">Yesterday</small></div>
                         </li>
-                        <li class='border-bottom row' data-name='Dave Grohl' data-type='oneToOne'>
-                            <div class='mx-3'><img src="./resources/img/dave.jpg" class="rounded-circle" alt="Dave Grohl"></div>
+                        <!-- single contact end -->
+                        <!-- single contact starts -->
+                        <li class='border-bottom row position-relative px-1 py-2' data-name='Dave Grohl' data-type='oneToOne'>
+                            <div class='mx-md-3 mx-2'><img src="https://res.cloudinary.com/gscode/image/upload/v1523549009/dave.jpg" class="rounded-circle" alt="Dave Grohl"></div>
                             <div>Dave Grohl
                                 <br><span class="text-muted">football</span></div>
-                            <div class="position-absolute"><small class="text-muted">Yesterday</small>
+                            <div class="position-absolute text-right"><small class="text-muted">Yesterday</small>
                                 <br>
-                                <div class="unread rounded-circle mr-2">2</div>
+                                <div class="unread text-white bg-primary rounded-circle border-primary mr-2 text-center d-inline-block">2</div>
                             </div>
                         </li>
-                        <li class='border-bottom row' data-name='Emily Vulcano' data-type='oneToOne'>
-                            <div class='mx-3'><img src="./resources/img/emily.jpg" class="rounded-circle" alt="Emily Vulcano"></div>
+                        <!-- single contact end -->
+                        <!-- single contact starts -->
+                        <li class='border-bottom row position-relative px-1 py-2' data-name='Emily Vulcano' data-type='oneToOne'>
+                            <div class='mx-md-3 mx-2'><img src="https://res.cloudinary.com/gscode/image/upload/v1523549063/emily.jpg" class="rounded-circle" alt="Emily Vulcano"></div>
                             <div>Emily Vulcano
                                 <br><span class="text-muted">ok</span></div>
-                            <div class="position-absolute"><small class="text-muted">1/4/2018</small>
+                            <div class="position-absolute text-right"><small class="text-muted">1/4/2018</small>
                                 <br>
-                                <div class="unread rounded-circle mr-2">1</div>
+                                <div class="unread text-white bg-primary rounded-circle border-primary mr-2 text-center d-inline-block">1</div>
                             </div>
                         </li>
-                        <li class='border-bottom row' data-name='John Gatto' data-type='oneToOne'>
-                            <div class='mx-3'><img src="./resources/img/john.jpg" class="rounded-circle" alt="John Gatto"></div>
+                        <!-- single contact end -->
+                        <!-- single contact starts -->
+                        <li class='border-bottom row position-relative px-1 py-2' data-name='John Gatto' data-type='oneToOne'>
+                            <div class='mx-md-3 mx-2'><img src="https://res.cloudinary.com/gscode/image/upload/v1523549115/john.jpg" class="rounded-circle" alt="John Gatto"></div>
                             <div>John Gatto
                                 <br><span class="text-muted">weekend</span></div>
                             <div class="position-absolute"><small class="text-muted">25/3/2018</small></div>
                         </li>
-                        <li class='border-bottom row' data-name='LA BOYS' data-type='group'>
-                            <div class='mx-3'><img src="./resources/img/la.png" class="rounded-circle" alt="LA BOYS"></div>
+                        <!-- single contact end -->
+                        <!-- single contact starts -->
+                        <li class='border-bottom row position-relative px-1 py-2' data-name='LA BOYS' data-type='group'>
+                            <div class='mx-md-3 mx-2'><img src="https://res.cloudinary.com/gscode/image/upload/v1523549197/la.png" class="rounded-circle" alt="LA BOYS"></div>
                             <div>LA BOYS
                                 <br><span class="text-muted"><img src="./resources/img/unseen.png" alt="seen" width="16" height="16" class="mb-1 mx-1">I have a Query!</span></div>
                             <div class="position-absolute"><small class="text-muted">20/3/2018</small></div>
                         </li>
+                        <!-- single contact end -->
                     </ul>
                 </div>
+                <!-- whatsapp contacts end -->
             </div>
-            <div class="profile-sidebar col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 border-right d-none">
+            <!-- sidebar section ends -->
+            <!-- profile sidebar starts-->
+            <div class="profile-sidebar col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 border-right d-none px-0">
+                <!-- link to go back -->
                 <div class="profile-nav bg-primary d-flex align-items-end">
-                    <div class="text-white">
-                        <i class="ion-ios-arrow-thin-left back"></i> Profile
+                    <div class="text-white my-2 mx-3 w-100">
+                        <i class="ion-ios-arrow-thin-left mx-2 back"></i> Profile
                     </div>
                 </div>
-                <div class="pic-container position-relative">
+                <!-- profile picture -->
+                <div class="pic-container my-5 mx-auto position-relative">
                     <img src="" class="profile-pic d-block img-fluid rounded-circle" alt="profile picture">
-                    <div class="overlay img-fluid position-absolute">
+                    <div class="overlay img-fluid rounded-circle position-absolute">
                         <div class="text position-absolute text-center"><i class="ion-camera"></i>
                             <br>CHANGE PROFILE PHOTO</div>
                     </div>
                 </div>
-                <div class="edit">
-                    <div class="lbl">Your Name</div>
-                    <input type="text" name="displayName" disabled value="">
+                <!-- profile picture ends -->
+                <!-- name and about -->
+                <div class="edit mt-4 mb-2">
+                    <div class="lbl border-0 py-2 px-4 text-primary bg-white">Your Name</div>
+                    <input class="border-0 py-2 px-4 text-dark bg-white w-100" type="text" name="displayName" disabled value="">
                 </div>
-                <div class="text-muted">This is not your username or pin. This name will be visible to your WhatsApp contacts.</div>
-                <div class="edit">
-                    <div class="lbl">About</div>
-                    <input type="text" name="about" disabled value="">
+                <div class="text-muted px-4">This is not your username or pin. This name will be visible to your WhatsApp contacts.</div>
+                <div class="edit mt-4 mb-2">
+                    <div class="lbl border-0 py-2 px-4 text-primary bg-white">About</div>
+                    <input class="border-0 py-2 px-4 text-dark bg-white w-100" type="text" name="about" disabled value="">
                 </div>
+                <!-- name and about ends -->
             </div>
-            <div class="chat col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-block">
-                <div class="row border-bottom d-flex align-items-center">
+            <!-- profile sidebar ends -->
+            <!-- Chat area starts -->
+            <div class="chat col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-block px-0">
+                <!-- Chat header starts -->
+                <div class="row border-bottom d-flex align-items-center text-white">
                     <div class="d-flex align-items-center back"><i class='ion-arrow-left-c ml-2 mr-1'></i><img src="" class="rounded-circle" alt=""></div>
                     <div class="ml-2"><span class="chat-window_name"></span>
                         <br><span class="details"></span></div>
                 </div>
-                <div class="chat-section">
-                    <!-- 
+                <!-- Chat header ends -->
+                <div class="chat-section px-md-5">
+                    <!--  <div class="d-flex justify-content-center">
+                         <div class="date">4/</div>
+                     </div>
                     <div class="d-flex justify-content-end">
                         <div class="self rounded position-relative  ">
                             <div class="message  ">Hi Janet<br>Paul here</div>
@@ -112,18 +145,20 @@
                             <div class="message">Hiiii😊😊... how are u???</div>
                             <div class='text-muted position-absolute'>2:35 PM </div>
                         </div>
-                    </div>
-                    -->
+                    </div> -->
                 </div>
             </div>
+            <!-- Chat area ends -->
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="./resources/js/whatsappdata.js"></script>
-        <script src='./resources/js/script.js'></script>
+        <!-- minified Whatsapp data || check whatsappdata.js for unminified version-->
+        <script src="./resources/js/whatsappdata.min.js"></script>
+        <!-- minified script file || check script.js for unminified version-->
+        <script src='./resources/js/script.min.js'></script>
 </body>
 
 </html>
