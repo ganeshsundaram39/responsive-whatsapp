@@ -1,7 +1,7 @@
 /*****************************************************/
 
 
-/********** color: #007bff; color: #555; **********/
+/********** color: #007bff; color: #343a40; **********/
 
 /********** prefixer:https://autoprefixer.github.io/ **********/
 
@@ -56,8 +56,6 @@ body {
 /*********************************************/
 
 .sidebar .profile {
-
-    background-color: #555;
     height: 10vh;
 }
 
@@ -180,7 +178,6 @@ body {
 }
 
 .text {
-    color: #fff;
     font-size: 0.8rem;
     top: 50%;
     left: 50%;
@@ -236,7 +233,6 @@ body {
 }
 
 .chat>.row:first-child {
-    background-color: #555;
     font-size: 0.8rem;
     height: 10vh;
 }
@@ -313,7 +309,6 @@ body {
 .chat-section .date {
 
     font-size: 0.6rem;
-    color: #555;
     background-color: rgba(225, 245, 254, 0.92);
     -webkit-box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
             box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);

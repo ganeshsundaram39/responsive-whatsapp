@@ -166,7 +166,7 @@ const receiverHTML = (index, currentType, previousType, text, time) => {
 const messageDateHTML = date => {
 
     return `<div class="d-flex justify-content-center sticky-top">
-            <div class="date rounded my-2 px-2 py-1 text-center">${date}</div></div>`;
+            <div class="date rounded my-2 px-2 py-1 text-center text-dark">${date}</div></div>`;
 };
 
 // Generate HTML for messages of particular date
