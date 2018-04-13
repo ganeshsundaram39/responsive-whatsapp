@@ -64,7 +64,6 @@ body {
 
 .sidebar .profile-pic,
 .chat .rounded-circle {
-
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -92,7 +91,6 @@ body {
 }
 
 .chats img {
-
     width: 50px;
     height: 50px;
 }
@@ -234,7 +232,7 @@ body {
 /*********************************************/
 
 .chat {
-    background: url('https://res.cloudinary.com/gscode/image/upload/v1523549300/whatsapp-bg.png') repeat;
+    background: url('https://res.cloudinary.com/gscode/image/upload/v1523622452/background-whatsapp.png') repeat;
 }
 
 .chat i {

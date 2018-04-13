@@ -15,7 +15,6 @@ const accessDOM = () => {
         chatWindowName: document.querySelector('.chat .chat-window_name'),
         chatWindowPhoto: document.querySelector('.chat img'),
         details: document.querySelector('.chat .details'),
-        clickedList(event) { return event.path.find(x => x.localName === 'li') },
         chatSection: document.querySelector('.chat-section'),
         unreadMessage: document.querySelector('.chats .col-3 div'),
         chat: document.querySelector('.chat')
@@ -61,13 +60,13 @@ const chat = {
 // Show or hide message indicator
 const messageIndicator = {
 
-    show() {
-        accessDOM().clickedList(event).children[2].children[2].classList.remove('d-none');
-        accessDOM().clickedList(event).children[2].children[2].classList.add('d-inline-block');
+    show(event) {
+        event.currentTarget.children[2].children[2].classList.remove('d-none');
+        event.currentTarget.children[2].children[2].classList.add('d-inline-block');
     },
-    hide() {
-        accessDOM().clickedList(event).children[2].children[2].classList.remove('d-inline-block');
-        accessDOM().clickedList(event).children[2].children[2].classList.add('d-none');
+    hide(event) {
+        event.currentTarget.children[2].children[2].classList.remove('d-inline-block');
+        event.currentTarget.children[2].children[2].classList.add('d-none');
     }
 };
 
@@ -99,9 +98,9 @@ const sidebarVisibilityFromChat = event => {
 const hideNewMessageIndicator = event => {
 
     // Check if message indicator exist
-    if (accessDOM().clickedList(event).children[2].children[2]) {
+    if (event.currentTarget.children[2].children[2]) {
 
-        messageIndicator.hide();
+        messageIndicator.hide(event);
     }
 }
 
@@ -112,7 +111,7 @@ const changeListColor = event => {
     Array.from(accessDOM().chats).forEach(x => x.style.background = '#fff');
 
     // then set color #d8d8d8 to clicked contact or group
-    accessDOM().clickedList(event).style.background = '#d8d8d8';
+    event.currentTarget.style.background = '#d8d8d8';
 };
 
 // Assign bootstrap classes such as invisible, mt-0 to message container in chat section
@@ -263,12 +262,12 @@ const userClicksChat = event => {
     }
 
     // Two types of communication onetoone or group
-    // accessDOM().clickedList(event).getAttribute('data-type') gets the type of communication
+    // event.currentTarget.getAttribute('data-type') gets the type of communication
     // loop through that particular type
-    for (let userOrGrp of whatsappData.communication[accessDOM().clickedList(event).getAttribute('data-type')]) {
+    for (let userOrGrp of whatsappData.communication[event.currentTarget.getAttribute('data-type')]) {
 
         // Check if name matches with the name of contact or group stored in Whatsappdata store
-        if (userOrGrp.name === accessDOM().clickedList(event).getAttribute('data-name')) {
+        if (userOrGrp.name === event.currentTarget.getAttribute('data-name')) {
 
             // Change its bg color
             changeListColor(event);
