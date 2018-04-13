@@ -64,7 +64,7 @@ const whatsappData = {
                         "seen": true
                     }, {
                         "type": "self",
-                        "text": "What is your Degree/Major In?",
+                        "text": "What is your Degree/Major in?",
                         "time": "3:02 PM",
                         "seen": true
                     }, {

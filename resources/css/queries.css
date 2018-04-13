@@ -36,7 +36,6 @@
 
     .chat-section .self,
     .chat-section .other {
-        margin: 3% 0;
         font-size: 0.7rem;
     }
 
@@ -47,12 +46,6 @@
     .chat-section .text-muted img {
         width: 14px;
         height: 14px;
-    }
-
-    /*triangle shape in message*/
-    .triangle-left,
-    .triangle-right {
-        margin: 3% 0;
     }
 }
 

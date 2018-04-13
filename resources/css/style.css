@@ -253,7 +253,7 @@ body {
 .chat-section .self,
 .chat-section .other {
 
-    margin: 1% 0;
+    margin: 5px 0;
     font-size: 0.75rem;
     -webkit-box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
             box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
@@ -299,7 +299,7 @@ body {
     width: 0;
     height: 0;
     z-index: 99;
-    margin: 1% 0;
+    margin: 5px 0;
 }
 
 
